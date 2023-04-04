@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacténos - Your Furniture</title>
+        <!-- Referencia a los estilos -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+<!-- Se iniciará una conversación con el dueño por el aplicativo WhatsApp-->
+    <a target="_blank" href="https://wa.me/51931238457?text=Hola%20quiero%20comprar%20ya!">
+        <img id="chatWhatsApp" src="image/recursos/WhatsApp.svg" alt="Iniciar convsersación por WhatsApp">
+    </a>
+
+ <!-- Inicia el Encabezado -->
+    <header>
+        <h1>Your Furniture</h1>
+        <h2>Todo tipo de muebles para tu hogar soñado</h2>
+    </header>
+
+    <!-- Inicia la barra de navegación -->
+    <nav> 
+        <ul id="navegar">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Nosotros</a></li>
+            <li><a href="contact.html">Contacténos</a></li>
+        </ul>
+    </nav>
+
+ <!-- Inicia el contenido principal -->
+    <main>
+
+        <!-- Los datos de contacto-->
+        <section id="ubicanos">
+
+            <h3>UBICACIÓN</h3>
+
+            <p>Av. Caminos del Inca 1656<br>
+                Surco - Lima - Perú
+            </p>
+            <p>Av. Del Ejército 956<br>
+                Miraflores - Lima - Perú
+            </p>
+            <p>Télefono: 940 552 268 / 900 469 262</p>
+
+             <!-- Enlaces de las direcciones en google maps -->
+           
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.7882500594174!2d-76.98424978255615!3d-12.126635799999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c78a189133bb%3A0xd082a542c5c56ebd!2sAv.%20Caminos%20del%20Inca%201656%2C%20Santiago%20de%20Surco%2015039!5e0!3m2!1ses!2spe!4v1680213128170!5m2!1ses!2spe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.9951812186473!2d-77.05105678467228!3d-12.112481946425543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c836ee8de3bb%3A0xb93f775b701c7ac6!2sAv.%20del%20Ej%C3%A9rcito%20956%2C%20Miraflores%2015074!5e0!3m2!1ses!2spe!4v1680213275409!5m2!1ses!2spe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+
+        <!-- El formulario de contacto -->
+        <section id="formContacto">
+
+            <!-- Formulario de registo -->
+            <form action="contactoRegistro.html" method="post">
+
+                <!-- Input / Se ingresan los datos -->
+                <div>
+                    <H2>
+                        INGRESE SUS DATOS
+                    </H2>
+                    <label for="txtNombre">Nombres</label>
+                    <input type="text" name="txtNombre" id="txtNombre" maxlength=50 required>
+                </div>
+                <div>
+                    <label for="txtApellido">Apellidos</label>
+                    <input type="text" name="txtApellido" id="txtApellido" autocomplete="off" maxlength=54 required>
+                </div>
+                <div>
+                    <label for="txtEmail">Correo Electrónico</label>
+                    <input type="email" name="txtEmail" id="txtEmail" autocomplete="off" maxlength=128 required>
+                </div>
+
+                <div>
+                    <label for="numPhone">Teléfono/Celular</label>
+                    <input type="tel" name="numPhone" id="numPhone" maxlength="13" minlength="7">
+                </div>
+
+                <!-- Select / Lista de selección-->
+                <div>
+                    <label for="txtAsunto">Seleccione el asunto:</label>
+                    <select name="txtAsunto" id="txtAsunto" required>
+                        <option value="">Consulta de promociones vigentes</option>
+                        <option value="comprarMayor">Comprar muebles por mayor</option>
+                        <option value="consultaDevolucion">Consulta para devolución</option>
+                        <option value="consultaGeneral">Consulta general</option>
+                    </select>
+                </div>
+
+                <!-- TextArea / Se puede ingresar un texto-->
+
+                <div>
+                    <label for="bodyDetalle">Ingrese el mensaje</label>
+                    <textarea name="bodyDetalle" id="bodyDetalle" cols="30" rows="8" required></textarea>
+                </div>
+
+                <!-- Input Checkbox/ Autorización de la publicidad -->
+                <div>
+                    <input type="checkbox" name="bolAutorizo" id="bolAutorizo" required>
+                    <label for="bolAutorizo">Autorizo el envío de publicidad e información comercial</label>
+                </div>
+
+                <!-- Input Submit / Botón de enviar -->
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
